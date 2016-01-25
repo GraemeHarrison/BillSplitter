@@ -9,6 +9,9 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (strong, nonatomic) IBOutlet UITextField *billAmountText;
+@property (strong, nonatomic) IBOutlet UISlider *peopleSlider;
+@property (strong, nonatomic) IBOutlet UILabel *amountPerPerson;
 
 @end
 
@@ -16,7 +19,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+}
+- (IBAction)calculateSplitAmount:(UIButton *)sender {
 }
 
 - (void)didReceiveMemoryWarning {
